@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="My.Widget.Button.Borderless.Unpadded" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:padding">0px</item>
+        <item name="android:drawablePadding">0px</item>
+    </style>
 </resources>

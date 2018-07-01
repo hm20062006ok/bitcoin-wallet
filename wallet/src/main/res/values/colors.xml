@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_action_bar">#ff222222</color>
+
+    <!-- foreground-->
+    <color name="fg_less_significant">#ff000000</color>
+
+    <!-- background -->
+    <color name="bg_less_bright">#ffe8e8f0</color>
+
 </resources>

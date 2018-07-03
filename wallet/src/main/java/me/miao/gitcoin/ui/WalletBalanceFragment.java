@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 
 import me.miao.gitcoin.R;
 
-
+/**
+ * 余额 Fragment
+ */
 public final class WalletBalanceFragment extends Fragment {
 
     @Nullable

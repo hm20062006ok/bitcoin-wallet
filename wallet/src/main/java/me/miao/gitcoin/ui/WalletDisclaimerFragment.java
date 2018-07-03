@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+/**
+ * 免责声明
+ */
 public final class WalletDisclaimerFragment extends Fragment {
 
     @Nullable

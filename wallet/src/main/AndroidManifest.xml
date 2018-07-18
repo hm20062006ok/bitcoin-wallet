@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.miao.gitcoin">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <application
         android:name="me.miao.gitcoin.WalletApplication"
         android:allowBackup="true"

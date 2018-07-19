@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/wallet_options_request"
+        android:icon="@drawable/ic_send_flipped_white_24dp"
+        app:showAsAction="always|withText"
+        android:title="@string/request_coins_activity_title"
+        android:titleCondensed="@string/button_request_coins"
+        android:visible="@bool/wallet_actions_top"/>
+    <item
+        android:id="@+id/wallet_options_send"
+        android:icon="@drawable/ic_send_white_24dp"
+        android:title="@string/send_coins_activity_title"
+        android:titleCondensed="@string/button_send_coins"
+        android:visible="@bool/wallet_actions_top"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/wallet_options_scan"
+        android:icon="@drawable/ic_photo_camera_white_24dp"
+        android:title="@string/button_scan"
+        android:visible="@bool/wallet_actions_top"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/wallet_options_address_book"
+        android:icon="@drawable/ic_local_offer_white_24dp"
+        android:title="@string/address_book_activity_title"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:title="@string/wallet_options_safety_menu"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/wallet_options_safety"
+                android:title="@string/wallet_options_safety"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/wallet_options_technical_notes"
+                android:title="@string/wallet_options_technical_notes_title"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/wallet_options_backup_wallet"
+                android:title="@string/export_keys_dialog_title"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/wallet_options_restore_wallet"
+                android:title="@string/import_keys_dialog_title"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/wallet_options_encrypt_keys"
+                android:title="@string/encrypt_keys_dialog_title"
+                android:visible="false"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/wallet_options_exchange_rates"
+        android:title="@string/exchange_rates_activity_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallet_options_sweep_wallet"
+        android:title="@string/sweep_wallet_activity_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallet_options_network_monitor"
+        android:title="@string/network_monitor_activity_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallet_options_preferences"
+        android:title="@string/preferences_activity_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallet_options_report_issue"
+        android:title="@string/preferences_report_issue_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallet_options_help"
+        android:orderInCategory="999"
+        android:title="@string/button_help"
+        app:showAsAction="never" />
+
+</menu>

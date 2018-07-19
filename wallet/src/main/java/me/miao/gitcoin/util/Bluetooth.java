@@ -23,6 +23,7 @@ public class Bluetooth {
      */
     private static final String MARSHMELLOW_FAKE_MAC = "02:00:00:00:00:00";
 
+    // FIXME: 7/18/18 至少在Android 8上不能工作
     /**
      * 使用反射获取 Android 6 以上的真实 MAC 地址
      *
@@ -32,6 +33,7 @@ public class Bluetooth {
     public static @Nullable
     String getAddress(final BluetoothAdapter adapter) {
         if (adapter == null) {
+            log.error("BluetoothAdapter 为空");
             return null;
         }
         final String address = adapter.getAddress();
@@ -43,11 +45,12 @@ public class Bluetooth {
             mServiceField.setAccessible(true);
             final Object mService = mServiceField.get(adapter);
             if (mService == null) {
+                log.error("使用反射获取蓝牙MAC地址失败");
                 return null;
             }
             return (String) mService.getClass().getMethod("getAddress").invoke(mService);
         } catch (InvocationTargetException e) {
-            log.info("使用反射获取蓝牙MAC地址失败");
+            log.error("使用反射获取蓝牙MAC地址失败");
             return null;
         } catch (Exception e) {
             throw new RuntimeException(e);
